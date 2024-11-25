@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <style>
+main{
+    height: 100vh;
+}
+    </style>
+</head>
+<body>
+    <main class="w-100 bg-info p-5">
+        <div class="parent w-50 h-75 bg-light mx-auto" id="parent">
+          <!-- <div class="sub bg-danger w-100 h-100" id="sub1"></div>
+          <div class="sub bg-warning  w-100 h-100" id="sub2"></div>
+          <div class="sub bg-success  w-100 h-100" id="sub3"></div> -->
+        </div>
+
+        <button class="btn1 mx-auto" onclick="previous()">Previous</button>
+        <button class="btn2 mx-auto text-align-center" onclick="next()">Next</button>
+    </main>
+</body>
+</html>
+
+<script>
+let slideShow = ['#ff5733', 'yellow' , 'green']
+
+
+
+function previous() {
+parent.innerHTML = slideShow
+++slideShow
+console.log(slideShow);
+    
+}
+
+function next() {
+    parent.innerHTML = slideShow
+++slideShow
+console.log(slideShow);
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
